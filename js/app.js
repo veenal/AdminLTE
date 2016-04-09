@@ -8,6 +8,7 @@ app.directive('headerPanel', function(){
 		
 	};
 });
+<<<<<<< HEAD
 
 app.directive('sidebarPanel', function() {
 	return {
@@ -58,3 +59,5 @@ app.controller('EmailController',function(){
 			message: "hello world"
 		}
 		];*/
+=======
+>>>>>>> ddd096b4d9b596536274cd27bf988e0afd5c631f
