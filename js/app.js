@@ -8,7 +8,6 @@ app.directive('headerPanel', function(){
 		
 	};
 });
-<<<<<<< HEAD
 
 app.directive('sidebarPanel', function() {
 	return {
@@ -22,6 +21,48 @@ app.directive('csidebarPanel', function() {
 	return {
 		restrict: 'E',
 		templateUrl: 'csidebar-panel'
+		
+
+	};
+});
+
+app.directive('noticeBoard', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'notice-board'
+
+	};
+});
+
+app.directive('calendarPanel', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'calendar-panel'
+
+	};
+});
+
+app.controller('CsidebarController', function ($scope) {
+            //This will hide the DIV by default.
+            $scope.IsVisible = false;
+            $scope.ShowHide = function () {
+                //If DIV is visible it will be hidden and vice versa.
+                $scope.IsVisible = $scope.IsVisible ? false : true;
+            }
+        });
+
+app.directive('coursesPanel', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'courses-panel'
+
+	};
+});
+
+app.directive('quickLinks', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'quick-links'
 
 	};
 });
@@ -59,5 +100,3 @@ app.controller('EmailController',function(){
 			message: "hello world"
 		}
 		];*/
-=======
->>>>>>> ddd096b4d9b596536274cd27bf988e0afd5c631f
