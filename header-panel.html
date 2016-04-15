@@ -4,7 +4,7 @@
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
-      <a href="index2.html" class="logo">
+      <a href="index.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>CMS</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -177,11 +177,16 @@
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button --><li>
-          <div ng-app="admin" ng-controller="CsidebarController">
+          <!-- <div ng-app="admin" ng-controller="CsidebarController">
             <a><i class="fa fa-gears" ng-click="ShowHide()"></i></a>
             <div ng-show="IsVisible">
             <csidebar-panel></csidebar-panel></div></div>
-          </li>
+          </li> -->
+          <li>
+                <a href="#" class="sidebar-toggle" data-toggle="control-sidebar" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+              </li>
         </ul>
       </div>
 

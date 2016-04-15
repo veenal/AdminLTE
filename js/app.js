@@ -1,5 +1,20 @@
 var app = angular.module('admin', [ ]);
 
+/*app.config(['$stateProvider', 
+	function($stateProvider){
+		$stateProvider
+			.state('app', {
+      url: '/js',
+            views: {
+              '@': {
+                templateUrl: '/app/layout/layout.html'
+              },
+              'calendar@app' : { 
+                templateUrl: 'calendar-panel.html'
+              }
+            },
+          });
+	}])*/
 
 app.directive('headerPanel', function(){
 	return {
@@ -42,14 +57,14 @@ app.directive('calendarPanel', function() {
 	};
 });
 
-app.controller('CsidebarController', function ($scope) {
+/*app.controller('CsidebarController', function ($scope) {
             //This will hide the DIV by default.
             $scope.IsVisible = false;
             $scope.ShowHide = function () {
                 //If DIV is visible it will be hidden and vice versa.
                 $scope.IsVisible = $scope.IsVisible ? false : true;
             }
-        });
+        });*/
 
 app.directive('coursesPanel', function() {
 	return {
@@ -85,6 +100,25 @@ app.controller('EmailController',function(){
 		];
 	});
 
+/*app.controller('CsidebarController', function () {
+  this.isCollapsed = true;
+});*/
+
+app.directive('coursesOdd', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'courses-odd.html'
+		
+	};
+});
+
+app.directive('coursesEven', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'courses-even.html'
+		
+	};
+});
 
 /*var gems = [
 	{
