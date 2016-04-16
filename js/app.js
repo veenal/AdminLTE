@@ -100,9 +100,76 @@ app.controller('EmailController',function(){
 		];
 	});
 
+app.directive('userInfo', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'user-info.html'
+
+	};
+});
+
+app.controller('DetailsController',function(){
+	// body...
+	this.detail = {
+		fname: "Ram",
+		mname: "singh",
+		lname: "chauhan",
+		rollNo: "DTU/2K13/SE/099",
+		branch: "Software Engineering",
+		degree: "B.Tech",
+		preferredName: "ram"
+	}
+	});
+
+app.directive('aboutMe', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'about-me.html'
+
+	};
+});
+
+app.controller('SkillsController',function(){
+	// body...
+	this.skillvar = [
+		{
+			field: "UI design"
+		},
+		{
+			field: "Android development"
+		},
+		{
+			field: "Web Development"
+		}
+		];
+	});
+
+app.controller('InterestController',function(){
+	// body...
+	this.interests = [
+		{
+			field: "UI design"
+		},
+		{
+			field: "Android development"
+		},
+		{
+			field: "Web Development"
+		}
+		];
+	});
+
 /*app.controller('CsidebarController', function () {
   this.isCollapsed = true;
 });*/
+
+app.directive('projectTabs', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'project-tabs.html'
+
+	};
+});
 
 app.directive('coursesOdd', function(){
 	return {
