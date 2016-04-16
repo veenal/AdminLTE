@@ -27,12 +27,12 @@ app.directive('headerPanel', function(){
 app.directive('sidebarPanel', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'sidebar-panel'
+		templateUrl: 'sidebar-panel.html'
 
 	};
 });
 
-app.directive('csidebarPanel', function() {
+/*app.directive('csidebarPanel', function() {
 	return {
 		restrict: 'E',
 		templateUrl: 'csidebar-panel'
@@ -40,11 +40,11 @@ app.directive('csidebarPanel', function() {
 
 	};
 });
-
+*/
 app.directive('noticeBoard', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'notice-board'
+		templateUrl: 'notice-board.html'
 
 	};
 });
@@ -52,24 +52,24 @@ app.directive('noticeBoard', function() {
 app.directive('calendarPanel', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'calendar-panel'
+		templateUrl: 'calendar-panel.html'
 
 	};
 });
 
-/*app.controller('CsidebarController', function ($scope) {
+app.controller('CsidebarController', function ($scope) {
             //This will hide the DIV by default.
             $scope.IsVisible = false;
             $scope.ShowHide = function () {
                 //If DIV is visible it will be hidden and vice versa.
                 $scope.IsVisible = $scope.IsVisible ? false : true;
             }
-        });*/
+        });
 
 app.directive('coursesPanel', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'courses-panel'
+		templateUrl: 'courses-panel.html'
 
 	};
 });
@@ -77,7 +77,7 @@ app.directive('coursesPanel', function() {
 app.directive('quickLinks', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'quick-links'
+		templateUrl: 'quick-links.html'
 
 	};
 });
