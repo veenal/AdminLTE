@@ -41,11 +41,35 @@ app.directive('sidebarPanel', function() {
 	};
 });
 */
-app.directive('noticeBoard', function() {
+app.directive('announcementsPanel', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'announcements-panel.html'
+
+	};
+});
+
+app.directive('allNotices', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'all-notices.html'
+		
+	};
+});
+
+app.directive('noticeBoard', function(){
 	return {
 		restrict: 'E',
 		templateUrl: 'notice-board.html'
+		
+	};
+});
 
+app.directive('toDolist', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'to-dolist.html'
+		
 	};
 });
 

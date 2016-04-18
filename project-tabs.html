@@ -156,9 +156,17 @@
                   <div class="form-group">
                     <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
 
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
-                    </div>
+                    <form role="form" action="/wohoo" method="POST">
+  <label>Stuff</label>
+    <div class="multi-field-wrapper">
+      <div class="multi-fields">
+        <div class="multi-field">
+          <input type="text" name="stuff[]">
+          <button type="button" class="remove-field">Remove</button>
+        </div>
+      </div>
+    <button type="button" class="add-field">Add field</button>
+  </div>
                   </div>
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
@@ -179,5 +187,15 @@
               <!-- /.tab-pane -->
             </div>
             <!-- /.tab-content -->
+            <script type="text/javascript">
+            $('.multi-field-wrapper').each(function() {
+    var $wrapper = $('.multi-fields', this);
+    $(".add-field", $(this)).click(function(e) {
+        $('.multi-field:first-child', $wrapper).clone(true).appendTo($wrapper).find('input').val('').focus();
+    });
+    $('.multi-field .remove-field', $wrapper).click(function() {
+        if ($('.multi-field', $wrapper).length > 1)
+    </script>
           </div>
           <!-- /.nav-tabs-custom -->
+          
